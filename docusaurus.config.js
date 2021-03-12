@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Cafe',
   tagline: 'Effectively, first prototype based programming language on JVM.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://cafe-jvm-lang.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
-  projectName: 'cafe', // Usually your repo name.
+  projectName: 'cafe-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '',

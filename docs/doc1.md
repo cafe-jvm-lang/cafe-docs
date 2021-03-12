@@ -1,7 +1,7 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: get-start
+title: Get Started
+sidebar_label: Get Started
 slug: /
 ---
 

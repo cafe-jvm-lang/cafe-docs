@@ -1,6 +1,13 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    "Cafe": ["get-start", "doc2"],
+    // "Quick Start": ["pre-requisite", "download", "installation", "Hello-World"],
+    // "Cafe Fundamentals": [
+    //   "comments",
+    //   "var-const",
+    //   "data-type",
+    //   "operators",
+    // ],
+    Features: ["mdx"],
   },
 };

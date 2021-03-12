@@ -1,4 +1,8 @@
-# Cafe Fundamentals
+---
+id: cafe-fundamentals
+title: Cafe Fundamentals
+sidebar_label: Cafe Fundamentals
+---
 
 
 
@@ -29,7 +33,9 @@ const c = “Hey!”;
 ## Data types
 
 **String**		: represents sequence of characters.
+
 **Number**:   : represents numeric values.
+
 **Boolean**	: represents boolean value either `true `or `false`.
 
 ```
@@ -61,11 +67,15 @@ var d=true;
 
 ## Control Flow
 
-### 															if..else
+### 															`if..else`
 
-The if statement executes a statement if a specified condition is evaluated true. If the condition is false, another statement can be executed. Multiple ``if...else`` statements can be nested to create an ``else if`` clause.
+The if statement executes a statement if a specified condition is evaluated true. 
 
-###### Syntax:
+If the condition is false, another statement can be executed. 
+
+Multiple ``if...else`` statements can be nested to create an ``else if`` clause.
+
+Syntax
 
 ```
 if(condition1)
@@ -80,7 +90,7 @@ else
 
 
 
-###### Example:
+Example
 
 ```
 var i=10;
@@ -98,7 +108,7 @@ if(i<10){
 
 The `for` statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by `;`, followed by a statement (usually a block statement) to be executed in the loop.
 
-###### Syntax:
+Syntax
 
 ```
 for ([initialization]; [condition]; [final-expression])
@@ -107,7 +117,7 @@ for ([initialization]; [condition]; [final-expression])
 
 
 
-###### Example:
+Example
 
 ```
 # prints 0 to 4.
@@ -125,13 +135,13 @@ for(;i<5;i=i+1){
 
 Cafe Objects are a collection of properties made up of key-value pairs. Keys are unique & valid identifiers. Values can be any valid type (primitives, Functions or Objects). Objects can be declared using {} notation.
 
-###### Syntax:
+Syntax
 
 ```javascript
 {[[key: value],([key: value],)*]}
 ```
 
-###### Example:
+Example
 
 ```
 var a = {};
@@ -145,14 +155,14 @@ var a = {
 
 Object properties can be accessed using the `.`  or `[]` operator.
 
-###### Syntax:
+Syntax
 
 ```
 object.property
 object[property]
 ```
 
-###### Example:
+Example
 
 ```
 var z = “a”;
@@ -166,7 +176,7 @@ cmd.println(a[z]);	   # 1
 
 In CAFE, functions can be declared using keyword `func`.
 
-###### Syntax:
+Syntax
 
 ```
 func name([param[, param,[..., param]]]) {
@@ -185,7 +195,7 @@ The statements which comprise the body of the function.
 
 
 
-###### Example:
+Example
 
 ```
 func areaOfTriangle(base, height){

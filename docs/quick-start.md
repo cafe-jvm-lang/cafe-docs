@@ -1,8 +1,21 @@
-# Let's Start
+---
+id: quick-start
+title: Let's Start
+sidebar_label: Let's Start
+slug: /
+---
+
+<!-- # Let's Start -->
+
+
+
+These docs were written for all learners, from advanced developers to people getting started programming for the first time in their career.
 
 
 
 ## Prerequisites
+
+
 
 Cafe requires [Java SE Development Kit (JDK).](https://openjdk.java.net/projects/jdk8/)
 
@@ -12,7 +25,11 @@ If you already have a JDK on your system, make sure it is version 8 or newer.
 
 
 
+
+
 ## Set-up Cafe
+
+
 
 You can start by downloading the latest distribution:
 
@@ -20,7 +37,11 @@ You can start by downloading the latest distribution:
 
 
 
+
+
 ## Installation
+
+
 
 #### Installation using .zip file.
 
@@ -35,22 +56,32 @@ You can start by downloading the latest distribution:
 
 
 
+
+
 ## Hello, World example
 
-```javascript
+
+
+``` 
 func Hello(){
     cmd.println("Hello, World");
 }
 Hello();
 ```
 
+
+
 #### Step 1: Save the source in file name ```Hello.cafe``` & Compile using command.
+
+
 
 ```
 $ cafe -c Hello.cafe
 ```
 
 > above command will generate ``Hello.class`` file.
+
+
 
 #### Step 2: To run execute command
 

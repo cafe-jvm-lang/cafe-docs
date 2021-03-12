@@ -1,30 +1,30 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Cafe',
+  tagline: 'Effectively, first prototype based programming language on JVM.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
+  projectName: 'cafe', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Cafe',
+        src: 'img/black_logo.svg',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: 'Blog', position: 'right'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/cafe-jvm-lang/cafe',
           label: 'GitHub',
           position: 'right',
         },
@@ -34,50 +34,66 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'DOCS',
           items: [
             {
-              label: 'Style Guide',
+              label: "Let's Start",
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Cafe Fundamentals',
+              to: 'docs/cafe-fundamentals/',
+            },
+            {
+              label: 'Cafe Advanced',
+              to: 'docs/prototypes/',
+            },
+            // {
+            //   label: 'Functional Programming',
+            //   to: 'docs/functional-programming/',
+            // },
+            // {
+            //   label: 'Modular Programming',
+            //   to: 'docs/modular-programming/',
+            // },
+          ],
+        },
+        {
+          title: 'COMMUNITY',
+          items: [
+            {
+              label: 'Ask for a Feature?',
+              href: 'https://gitter.im/cafe-jvm-lang/cafe-lang',
+            },
+            {
+              label: "Want to share feedback on docs? ",
+              href: 'https://gitter.im/cafe-jvm-lang/cafe-doc'
+            },
+            {
+              label: 'Contributor Guide',
+              href: 'https://github.com/cafe-jvm-lang/cafe/blob/master/README.md',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'FIND US',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/cafe-jvm-lang/cafe',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://github.com/cafe-jvm-lang/cafe-docs',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: 'blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cafe, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -88,13 +104,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/cafe-jvm-lang/cafe-docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/cafe-jvm-lang/cafe-docs/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

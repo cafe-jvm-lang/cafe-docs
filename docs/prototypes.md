@@ -1,4 +1,10 @@
-# Prototypes
+---
+id: prototypes
+title: Prototypes
+sidebar_label: Prototypes
+---
+
+<!-- # Prototypes -->
 
 
 
@@ -26,7 +32,7 @@ In cafe, delegation is the process of referring to the prototype for a property 
 
 ```
 var a = { hi: “hi” };
-    var b = $_create(a);
+    var b = Object.delegate(a);
     b.x = 10;
     b.y = 11;
     

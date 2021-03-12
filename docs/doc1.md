@@ -2,7 +2,6 @@
 id: get-start
 title: Get Started
 sidebar_label: Get Started
-slug: /
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

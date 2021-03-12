@@ -1,6 +1,11 @@
+---
+id: functional-programming
+title: () {Functional Programming}
+sidebar_label: Functional Programming
+---
 
 
-# (){Functional Programming}
+<!-- # (){Functional Programming} -->
 
 
 

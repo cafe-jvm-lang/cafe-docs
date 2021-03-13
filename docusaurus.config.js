@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/cafe-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
   projectName: 'cafe-docs', // Usually your repo name.
   themeConfig: {
@@ -93,7 +93,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cafe, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cafe Inc.`,
     },
   },
   presets: [

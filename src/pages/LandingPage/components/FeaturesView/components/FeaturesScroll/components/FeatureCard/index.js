@@ -1,10 +1,9 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import styles from './styles.module.css';
 import Spacer from "../../../../../utils/Spacer";
 import CodeBlock from '@theme/CodeBlock';
 
 function FeatureCard(props){
-    const featureCardRef = useRef(null);
     const code = `# A cafe object
 var rect = { 
             width: 10, 
@@ -12,7 +11,7 @@ var rect = {
         }
 `;
     return (
-        <div ref={featureCardRef} className={styles.Container}>
+        <div className={styles.Container}>
             <div className={styles.FeatureHeader}>
                 <div className={styles.FeatureTitle}>#class-free</div>
                 <Spacer height={20} />

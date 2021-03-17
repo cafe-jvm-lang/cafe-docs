@@ -27,7 +27,7 @@ module.exports = {
             },
             {
               label: 'The Basics',
-              to: '/docs/fundamentals'
+              to: '/docs/fundamentals/'
             },
             {
               label: 'Advanced Guide',

@@ -2,6 +2,7 @@
 id: functional-programming
 title: () {Functional Programming}
 sidebar_label: Functional Programming
+slug: /functional
 ---
 
 

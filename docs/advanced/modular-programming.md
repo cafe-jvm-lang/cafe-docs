@@ -2,6 +2,7 @@
 id: modular-programming
 title: Modular Programming
 sidebar_label: Modular Programming
+slug: /modular
 ---
 
 <!-- # Modular Programming -->

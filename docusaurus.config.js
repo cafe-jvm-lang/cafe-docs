@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Effectively, first prototype based programming language on JVM.',
   url: 'https://cafe-jvm-lang.github.io',
   baseUrl: '/cafe-docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.svg',
   organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
@@ -50,15 +50,15 @@ module.exports = {
           items: [
             {
               label: "Let's Start",
-              to: 'docs/',
+              to: '/docs/quick-start',
             },
             {
               label: 'Cafe Fundamentals',
-              to: 'docs/cafe-fundamentals/',
+              to: '/docs/fundamentals/',
             },
             {
               label: 'Cafe Advanced',
-              to: 'docs/prototypes/',
+              to: '/docs/advanced/',
             },
             // {
             //   label: 'Functional Programming',
@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Blog',
-              to: 'blog',
+              to: '#',
             },
           ],
         },
@@ -118,12 +118,12 @@ module.exports = {
           editUrl:
             'https://github.com/cafe-jvm-lang/cafe-docs/tree/master/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/cafe-jvm-lang/cafe-docs/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/cafe-jvm-lang/cafe-docs/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

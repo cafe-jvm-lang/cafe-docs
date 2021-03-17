@@ -2,7 +2,7 @@
 id: data-structures
 title: Data Structures
 sidebar_label: Data Structures
-slug: /data-structures
+slug: /fundamentals/data-structures
 ---
 
 <!-- # Data Structures -->

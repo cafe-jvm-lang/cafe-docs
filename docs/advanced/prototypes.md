@@ -2,7 +2,7 @@
 id: prototypes
 title: Prototypes
 sidebar_label: Prototypes
-slug: /prototypes
+slug: /advanced/
 ---
 
 <!-- # Prototypes -->

@@ -14,15 +14,27 @@ module.exports = {
       logo: {
         alt: 'Cafe',
         src: 'img/black_logo.svg',
+        srcDark: 'img/white_logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
           label: 'Docs',
-          position: 'right',
+          position: 'left',
+          items: [
+            {
+              label: 'Let\'s Start',
+              to: '/docs/quick-start'
+            },
+            {
+              label: 'The Basics',
+              to: '/docs/fundamentals'
+            },
+            {
+              label: 'Advanced Guide',
+              to: '/docs/prototypes'
+            }
+          ]
         },
-        {to: 'blog', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/cafe-jvm-lang/cafe',
           label: 'GitHub',
@@ -104,7 +116,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/cafe-jvm-lang/cafe-docs',
+            'https://github.com/cafe-jvm-lang/cafe-docs/tree/master/',
         },
         blog: {
           showReadingTime: true,

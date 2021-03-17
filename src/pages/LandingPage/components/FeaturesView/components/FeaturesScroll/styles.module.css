@@ -1,0 +1,12 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.Container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}

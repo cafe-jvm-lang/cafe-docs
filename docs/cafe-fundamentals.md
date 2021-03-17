@@ -2,6 +2,7 @@
 id: cafe-fundamentals
 title: Cafe Fundamentals
 sidebar_label: Cafe Fundamentals
+slug: /fundamentals
 ---
 
 

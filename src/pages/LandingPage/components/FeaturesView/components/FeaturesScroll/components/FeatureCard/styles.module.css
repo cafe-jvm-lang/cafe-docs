@@ -1,0 +1,32 @@
+.Container{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: var(--ifm-color-surface);
+    padding: 3rem 0.5rem;
+    margin: 0 1rem;
+}
+
+.FeatureHeader{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FeatureTitle{
+    font-size: var(--ifm-font-size-24);
+}
+
+.FeatureDescription{
+    font-size: var(--ifm-font-size-18);
+
+}
+
+.CodeExample{
+    width: 95%;
+}

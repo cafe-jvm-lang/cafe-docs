@@ -1,6 +1,7 @@
 module.exports = {
-  someSidebar: {
-    "The Basics": ["quick-start", "cafe-fundamentals", "data-structures"],
+  docs: {
+    "Let's Start": ["quick-start"],
+    "The Basics": ["cafe-fundamentals", "data-structures"],
     "Cafe Advanced": ["prototypes", "functional-programming", "modular-programming"],
   },
 };

@@ -2,6 +2,7 @@
 id: prototypes
 title: Prototypes
 sidebar_label: Prototypes
+slug: /prototypes
 ---
 
 <!-- # Prototypes -->
@@ -67,7 +68,7 @@ Thus, "**delegation**" is a more appropriate term, because these relationships a
 
 
 
-## `This-binding`
+## This-binding
 
 ### `Call-Site`
 

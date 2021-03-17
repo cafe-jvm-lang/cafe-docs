@@ -2,7 +2,7 @@
 id: quick-start
 title: Let's Start
 sidebar_label: Let's Start
-slug: /
+slug: /quick-start
 ---
 
 <!-- # Let's Start -->

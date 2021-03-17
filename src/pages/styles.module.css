@@ -30,8 +30,7 @@
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: #000000; 
-  color: white; 
-
+  color: white;
 }
 .buttons:hover{
   color: black;

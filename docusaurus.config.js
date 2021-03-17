@@ -31,7 +31,7 @@ module.exports = {
             },
             {
               label: 'Advanced Guide',
-              to: '/docs/prototypes'
+              to: '/docs/advanced/'
             }
           ]
         },

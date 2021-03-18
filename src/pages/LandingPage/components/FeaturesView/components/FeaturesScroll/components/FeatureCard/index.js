@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './styles.module.css';
 import Spacer from "../../../../../utils/Spacer";
-// import CodeBlock from '@theme/CodeBlock';
+import CodeBlock from '@theme/CodeBlock';
 
 function FeatureCard(props){
     const code = `# A cafe object
@@ -19,9 +19,9 @@ var rect = {
             </div>
             <Spacer height={20} />
             <div className={styles.CodeExample}>
-                {/*<CodeBlock className={'javasccript'}>*/}
-                {/*    {code}*/}
-                {/*</CodeBlock>*/}
+                <CodeBlock className={'javasccript'}>
+                    {code}
+                </CodeBlock>
             </div>
         </div>
     )

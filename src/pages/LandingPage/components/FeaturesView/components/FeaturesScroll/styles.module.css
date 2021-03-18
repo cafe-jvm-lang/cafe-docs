@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 95%;
-    overflow-x: auto;
+    overflow-x: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }

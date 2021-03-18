@@ -4,8 +4,14 @@ import FeatureCard from "./components/FeatureCard";
 
 function FeaturesScroll(props) {
 
+    const ref = useRef(null);
+
+    useEffect(()=>{
+        props.setScrollRef(ref);
+    })
+
     return (
-        <div className={styles.Container}>
+        <div ref={ref} className={styles.Container}>
             <FeatureCard />
             <FeatureCard />
             <FeatureCard />

@@ -1,10 +1,14 @@
-.Container{
+.Container {
     background-color: var(--ifm-color-background-2);
     transform: skewY(-2deg);
     padding: 8rem 0;
 }
 
-.Content{
+.FakeContainer {
+    height: 500px;
+}
+
+.Content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,9 +18,13 @@
     width: 95%;
     max-width: var(--ifm-container-width);
     margin: 0 auto;
+    top: -1px;
+
+    position: sticky;
+
 }
 
-.HeaderContainer{
+.HeaderContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,12 +32,12 @@
     flex: 1;
 }
 
-.HeaderTagLine{
+.HeaderTagLine {
     font-size: var(--ifm-font-size-18);
     color: var(--ifm-color-on-background-2);
 }
 
-.HeaderTitle{
+.HeaderTitle {
     font-size: var(--ifm-font-size-36);
     color: var(--ifm-color-on-background);
 }

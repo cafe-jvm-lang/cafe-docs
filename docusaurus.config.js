@@ -16,6 +16,7 @@ module.exports = {
         src: 'img/black_logo.svg',
         srcDark: 'img/white_logo.svg',
       },
+      hideOnScroll: true,
       items: [
         {
           label: 'Docs',

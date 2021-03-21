@@ -1,16 +1,18 @@
 import {useEffect, useState} from "react";
 
-function useClientWindow(){
-    const [clientGlobals, setClientGlobals] = useState({
-        clientWindow: undefined,
-        clientDoc: undefined
-    })
+function useWindowSize(){
+    const [windowSize, setWindowSize] = useState({
+        windowWidth: undefined,
+        windowHeight: undefined,
+        scrollHeight: undefined,
+    });
 
     useEffect(() => {
         function handleResize() {
-            setClientGlobals({
-                clientWindow: window,
-                clientDoc: document
+            setWindowSize({
+                windowWidth: window.innerWidth,
+                windowHeight: window.innerHeight,
+                scrollHeight: document.documentElement.scrollHeight,
             });
         }
 
@@ -24,7 +26,7 @@ function useClientWindow(){
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    return clientGlobals;
+    return windowSize;
 }
 
-export default useClientWindow;
+export default useWindowSize;

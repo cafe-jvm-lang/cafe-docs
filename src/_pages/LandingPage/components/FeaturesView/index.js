@@ -2,72 +2,61 @@ import React, {useEffect, useRef} from "react";
 import styles from './styles.module.css';
 import Spacer from "../utils/Spacer";
 import FeaturesScroll from "./components/FeaturesScroll";
-import useClientGlobals from "../../../../hooks/useClientGlobals";
-import useHasMounted from "../../../../hooks/useHasMounted";
+import useWindowSize from "../../../../hooks/useWindowSize";
 
 function FeaturesView() {
-    const ref = useRef(null);
-    const fakeRef = useRef(null);
-    const {clientWindow, clientDoc} = useClientGlobals();
-    let [scrollRef, setScrollRef] = [null, function (ref) {
-        scrollRef = ref;
-    }]
+    const contentRef = useRef(null);
+    const scrollRef = useRef(null);
+    const fakeDivRef = useRef(null);
+    let {windowWidth, windowHeight} = useWindowSize();
+    let lastScrollTop = 0;
 
-    useEffect(() => {
-        if(clientWindow !== undefined) {
-            function getScrollTop() {
-                return (clientWindow.pageYOffset !== undefined) ? clientWindow.pageYOffset : (clientDoc.documentElement || clientDoc.body.parentNode || clientDoc.body).scrollTop;
-            }
+    function getScrollTop() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
 
-            var currOffset = getScrollTop();
+    function horizontalScroll() {
+        let st = getScrollTop();
+        if(lastScrollTop != 0)
+            scrollRef.current.scrollLeft += (st - lastScrollTop);
+        lastScrollTop = st;
+    }
 
-            const slideLeft = function (e) {
-                let x = currOffset;
-                let y = getScrollTop();
-                scrollRef.current.scrollLeft += (y - x);
-                currOffset = y;
-            }
-
-
-            function triggerSlideLeft(e) {
-                if (e.intersectionRatio >= 0.9) {
-                    currOffset = getScrollTop();
-                    window.addEventListener('scroll', slideLeft);
-                } else {
-                    window.removeEventListener('scroll', slideLeft);
-                }
-            }
-
-            const cachedRef = ref.current,
-                observer = new IntersectionObserver(
-                    ([e]) => triggerSlideLeft(e),
-                    {
-                        threshold: [0, 0.9]
-                    }
-                )
-
-            observer.observe(cachedRef)
-
-            // unmount
-            return function () {
-                observer.unobserve(cachedRef)
-            }
+    function scrollListener(navHeight){
+        let rect = contentRef.current.getBoundingClientRect();
+        if(Math.round(rect.top) === Math.round(navHeight)){
+            horizontalScroll();
         }
-    },[clientWindow]);
+    }
+
+    useEffect((e) => {
+        const fakeDivHeight = scrollRef.current.scrollWidth - scrollRef.current.clientWidth + 150;
+        fakeDivRef.current.style.height = fakeDivHeight+'px';
+
+        const navHeight = getComputedStyle(document.body)
+            .getPropertyValue('--ifm-navbar-height').trim().slice(0,-2);
+        scrollListener = scrollListener.bind(null, navHeight);
+
+        window.addEventListener('scroll', scrollListener);
+
+        return function (){
+            window.removeEventListener('scroll', scrollListener);
+        }
+    }, [windowHeight, windowWidth]);
 
     return (
 
         <div className={styles.Container}>
-            <div ref={ref} className={styles.Content}>
+            <div ref={contentRef} className={styles.Content}>
                 <div className={styles.HeaderContainer}>
                     <div className={styles.HeaderTagLine}> Why Cafe?</div>
                     <Spacer height={20}/>
                     <div className={styles.HeaderTitle}> Features</div>
                 </div>
                 <Spacer height={60}/>
-                <FeaturesScroll setScrollRef={setScrollRef}/>
+                <FeaturesScroll ref={scrollRef}/>
             </div>
-            <div ref={fakeRef} className={styles.FakeContainer}></div>
+            <div ref={fakeDivRef} className={styles.FakeContainer}></div>
         </div>
 
     );

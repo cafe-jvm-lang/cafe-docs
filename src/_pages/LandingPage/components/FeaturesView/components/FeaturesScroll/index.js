@@ -1,15 +1,8 @@
-import React, {useEffect, useRef} from "react";
+import React, {forwardRef, useEffect, useRef} from "react";
 import styles from './styles.module.css';
 import FeatureCard from "./components/FeatureCard";
 
-function FeaturesScroll(props) {
-
-    const ref = useRef(null);
-
-    useEffect(()=>{
-        props.setScrollRef(ref);
-    })
-
+const FeaturesScroll = forwardRef((props,ref) => {
     return (
         <div ref={ref} className={styles.Container}>
             <FeatureCard />
@@ -20,6 +13,6 @@ function FeaturesScroll(props) {
             <FeatureCard />
         </div>
     );
-}
+});
 
 export default FeaturesScroll;

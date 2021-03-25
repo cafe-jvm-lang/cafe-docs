@@ -33,15 +33,15 @@ If you already have a JDK on your system, make sure it is version 8 or newer.
 
 You can start by downloading the latest distribution:
 
-<button name="button" style = "background-color:#3cadff; border: none; border-radius: 8px;
+<!-- <button name="button" style = "background-color:#3cadff; border: none; border-radius: 8px;
  color: white;
  padding: 8px 20px;
- cursor: pointer; font-size: 16px;" onclick="http://www.google.com">Download</button>
+ cursor: pointer; font-size: 16px;" markdown="1" onclick="http://www.google.com">Download</button>
 
 
+-->
 
-
-
+[*Download*](https://github.com/cafe-jvm-lang/cafe)
 ## Installation
 
 

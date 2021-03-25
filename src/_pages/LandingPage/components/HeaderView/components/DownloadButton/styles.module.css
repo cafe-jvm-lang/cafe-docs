@@ -17,7 +17,7 @@
 }
 
 .DownloadIcon {
-    background: url(/cafe-docs/img/download-light.svg) no-repeat top left;
+    background: url(/static/img/download-light.svg) no-repeat top left;
     background-size: contain;
     display: inline-block;
     padding: 20px;
@@ -29,7 +29,7 @@
 }
 
 .Dropdown {
-    background: url(/cafe-docs/img/down-arrow.svg) no-repeat top left;
+    background: url(/static/img/down-arrow.svg) no-repeat top left;
     background-size: contain;
     display: inline-block;
     padding: 25px;

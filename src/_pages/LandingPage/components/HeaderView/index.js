@@ -7,11 +7,6 @@ import DownloadButton from "./components/DownloadButton";
 
 function HeaderView() {
     const {siteConfig} = useDocusaurusContext();
-    const options = {
-        headers: {
-            'Authorization': 'secret 75e81886754fefb11601cb85dc3ee5331d11f2c9'
-        }
-    }
 
     const [isError, setIsError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -24,34 +19,11 @@ function HeaderView() {
 
     let downloadBtn = <></>
 
-    function createCookie(name, value, days) {
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            var expires = "; expires=" + date.toGMTString();
-        } else var expires = "";
-        document.cookie = name + "=" + value + expires + "; path=/";
-    }
-
-    function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    function eraseCookie(name) {
-        createCookie(name, "", -1);
-    }
-
-    function setCookies(version, urls) {
-        createCookie("cafe-version", version, 60);
-        createCookie("exe", urls.exe, 60);
-        createCookie("zip", urls.zip, 60);
+    function setStorageItems(version, urls) {
+        localStorage.setItem("cafe-dwn-version", version);
+        localStorage.setItem("exe", urls.exe);
+        localStorage.setItem("zip", urls.zip);
+        sessionStorage.setItem("exists", "true");
     }
 
     function getOS() {
@@ -78,32 +50,43 @@ function HeaderView() {
 
     useEffect(() => {
         setClientOS(getOS());
-        fetch('https://api.github.com/repos/cafe-jvm-lang/cafe/releases/latest', options)
-            .then(response => response.json())
-            .then(result => {
-                const urls = {};
-                result['assets'].forEach(function (item) {
-                    urls[item.name.split('.').pop()] = item.browser_download_url;
-                })
-                setDwnVersion(result['tag_name']);
-                setAssetsUrl(urls);
-                setIsLoaded(true);
-            }, error => {
-                setIsError(true);
-            });
+        if (!sessionStorage.getItem("exists")) {
+            fetch('https://api.github.com/repos/cafe-jvm-lang/cafe/releases/latest')
+                .then(response => response.json())
+                .then(result => {
+                    const urls = {};
+                    result['assets'].forEach(function (item) {
+                        urls[item.name.split('.').pop()] = item.browser_download_url;
+                    })
+                    setDwnVersion(result['tag_name']);
+                    setAssetsUrl(urls);
+                    setIsLoaded(true);
+                }, error => {
+                    setIsError(true);
+                });
+        } else {
+            setDwnVersion(localStorage.getItem("cafe-dwn-version"));
+            const urls = {};
+            urls["exe"] = localStorage.getItem("exe");
+            urls["zip"] = localStorage.getItem("zip");
+            setAssetsUrl(urls);
+            setIsLoaded(true);
+        }
     }, [])
 
     if (isError) {
-        const exe = readCookie("exe");
-        const zip = readCookie("zip");
+        const version = localStorage.getItem("cafe-dwn-version");
+        const exe = localStorage.getItem("exe");
+        const zip = localStorage.getItem("zip");
 
         if (exe && zip) {
+            setDwnVersion(version);
             setAssetsUrl({exe, zip});
         }
     }
 
     if (isLoaded) {
-        setCookies(dwnVersion, assetsUrl);
+        setStorageItems(dwnVersion, assetsUrl);
         let downloads = {}
         let defaultLink = assetsUrl.zip;
 

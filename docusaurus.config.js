@@ -22,6 +22,14 @@ module.exports = {
     ]
   ],
   themeConfig: {
+    announcementBar: {
+      id: 'star_us', // Any value that will identify this message.
+      content:
+          'If you like Cafe, please give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/cafe-jvm-lang/cafe">Github</a> 🎉!',
+      backgroundColor: '#79afaafc', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+      isCloseable: true, // Defaults to `true`.
+    },
     navbar: {
       title: '',
       logo: {

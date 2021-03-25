@@ -31,9 +31,9 @@ func testScope() {
 
 `insideScope()` displays value of `test` variable,which is declared in its parent function. 
 
-Variable `test`  is not available in `insideScope` which is referred as **Lexical Scope**.
+Variable `test`  is not declared in `insideScope` , still it is accessible.. which is referred as **Lexical Scope**.
 
-### More Closer to `Closure`
+### Closer to `Closure`
 
 Closure  is a function enclosed within another function having some variable(state).
 Example:
@@ -42,7 +42,7 @@ Example:
 func outerFunction() {	
 	var a = 10;	
 	func innerFunction() {		
-		cmd.println(“A Inside: “+a); // a 
+		cmd.println(“A Inside: “+a);
 	}
 	return innerFunction;
 }
@@ -50,43 +50,9 @@ var useClosure = outerFunction();
 useClosure(); # A Inside: 10
 ```
 
-Call to `outerFunction` is returning `innerFunction `(‘closure’ ) which captures the variable `a`.Variable `a` can be accessed only by `innerFunction ` outside its Lexical Scope so it can be referred as variable private to `innerFunction`.
+Call to `outerFunction` is returning `innerFunction `(‘closure’ ) which captures the variable `a`.
 
-### Practical use of Closure
-
-```
-func Account() {	
-	var amount = 0;	
-	func updateAmount(withAmnt) {		
-		balance = balance + withAmnt;	
-	}
-	return {		
-		deposit: func(b) {			
-			updateAmount(b);		
-		},
-		withdraw: func(b) {	
-			if(b > amount) {		
-				cmd.println(“Insufficient balance”);	
-			} else {	
-				updateAmount(-b);
-			}
-		},
-		checkBalance: func() {	
-			cmd.println(amount);
-		}	
-	};
-}
-var acc = Account();
-acc.checkBalance();
-acc.deposit(1000);
-acc.withdraw(2000);
-```
-
-
-
-
-
-## Higher-Order Functions
+Variable `a` can be accessed only by `innerFunction ` (in read-only mode) outside its Lexical Scope so it can be referred as variable private to `innerFunction`Higher-Order Functions
 
 ### `function are first-class objects!`
 

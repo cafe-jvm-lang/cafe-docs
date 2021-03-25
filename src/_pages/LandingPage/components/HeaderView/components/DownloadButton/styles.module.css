@@ -1,0 +1,45 @@
+.Container {
+    display: flex;
+    align-items: center;
+
+}
+
+.DownloadLeftButton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid var(--ifm-color-primary);
+}
+
+.DownloadLeftButtonContainer {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.DownloadIcon {
+    background: url(/cafe-docs/img/download-light.svg) no-repeat top left;
+    background-size: contain;
+    display: inline-block;
+    padding: 20px;
+}
+
+.Version {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.Dropdown {
+    background: url(/cafe-docs/img/down-arrow.svg) no-repeat top left;
+    background-size: contain;
+    display: inline-block;
+    padding: 25px;
+    border: 1px solid var(--ifm-color-primary-lighter);
+    margin-left: 2px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.Dropdown:hover {
+    background-color: var(--ifm-color-primary-lightest);
+}

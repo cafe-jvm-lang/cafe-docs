@@ -10,8 +10,8 @@ function DownloadButton(props) {
 
     for (const key in links) {
         items.push(
-            <li>
-                <a className={"dropdown__link"} href={links[key]} key={key}>
+            <li key={key}>
+                <a className={"dropdown__link"} href={links[key]}>
                     {key}
                 </a>
             </li>

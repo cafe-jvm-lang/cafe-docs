@@ -138,10 +138,15 @@
   Navbar
 */
 
-.navbar{
+.navbar {
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 1px 2px 0 var(--ifm-color-on-background);
+  justify-content: center;
+}
+
+.navbar__inner {
+  width: 92%;
 }
 
 .navbar__items {
@@ -151,13 +156,16 @@
 }
 
 /* for adding icons in navbar */
-.navbar__link[href*=github], .navbar .navbar__link[href*=slack], .navbar .navbar__link[href*=twitter] {
+.navbar__link[href*=github] {
   font-size: 0;
   padding: 4px;
-  margin: 0 4px;
 }
 
-.navbar .navbar__link[href*=github]:before, .navbar .navbar__link[href*=slack]:before, .navbar .navbar__link[href*=twitter]:before {
+.navbar__items--right > * {
+  margin-left: 1rem;
+}
+
+.navbar .navbar__link[href*=github]:before {
   content: "";
   display: block;
   width: 32px;

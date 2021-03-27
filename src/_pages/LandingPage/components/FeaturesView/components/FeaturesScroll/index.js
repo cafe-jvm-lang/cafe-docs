@@ -5,8 +5,8 @@ import FeatureCard from "./components/FeatureCard";
 const FeaturesScroll = forwardRef((props,ref) => {
     const card_content = [
         {
-            title: 'Simple, easy to use',
-            desc: 'Cafe is dynamically typed',
+            title: 'Simple & easy to use',
+            desc: 'Cafe is dynamically typed and has simple syntax',
             code: `var i= 10;
 cmd.println(i);`
         },
@@ -18,15 +18,15 @@ cmd.print(obj);`
         },
         {
             title: 'Behavior Delegation',
-            desc: 'Cafe links one Object to another Object to delegate properties',
+            desc: 'Cafe Object chains to delegate properties',
             code: `var parent= {age:45};
 var child = Object.delegate(parent);
 child.age = 18;
 cmd.println(child.age);`
         },
         {
-            title: 'Modular Programming',
-            desc: 'Cafe files act as modules',
+            title: 'Modular',
+            desc: 'Cafe supports Modular Programming',
             code: `import a from ‘./café_file’;
 a();
 #cafe_file.cafe
@@ -35,7 +35,7 @@ cmd.println(“I’m in café_file”);
 }`
         },
         {
-            title: 'Functional Programming',
+            title: 'Functional',
             desc: 'Supports HoF, Closure & Anonymous function',
             code: `Func a(b){
 b();

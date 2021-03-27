@@ -18,6 +18,7 @@ function HeaderView() {
     const [dwnVersion, setDwnVersion] = useState(null);
 
     let downloadBtn = <></>
+    let sourceCodeUrl = 'https://github.com/cafe-jvm-lang/cafe/archive/refs/heads/master.zip';
 
     function setStorageItems(version, urls) {
         localStorage.setItem("cafe-dwn-version", version);
@@ -96,6 +97,7 @@ function HeaderView() {
         }
 
         downloads["Portable (.zip)"] = assetsUrl.zip;
+        downloads["Source Code (.zip)"] = sourceCodeUrl;
 
         downloadBtn = <DownloadButton version={dwnVersion} links={downloads} defaultLink={defaultLink}/>
     }

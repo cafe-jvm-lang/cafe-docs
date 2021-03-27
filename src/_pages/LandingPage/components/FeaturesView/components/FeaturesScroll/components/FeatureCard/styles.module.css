@@ -25,7 +25,7 @@
 
 .FeatureDescription{
     font-size: var(--ifm-font-size-18);
-
+    text-align: center;
 }
 
 .CodeExample{

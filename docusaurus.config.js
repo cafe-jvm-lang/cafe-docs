@@ -8,20 +8,8 @@ module.exports = {
   favicon: 'img/favicon.svg',
   organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
   projectName: 'cafe-docs', // Usually your repo name.
-  plugins: [
-    [
-      'docusaurus2-dotenv',
-      {
-        path: "./.env", // The path to your environment variables.
-        safe: false, // If false ignore safe-mode, if true load './.env.example', if a string load that file as the sample
-        systemvars: false, // Set to true if you would rather load all system variables as well (useful for CI purposes)
-        silent: false, //  If true, all warnings will be suppressed
-        expand: false, // Allows your variables to be "expanded" for reusability within your .env file
-        defaults: false, //  Adds support for dotenv-defaults. If set to true, uses ./.env.defaults
-      }
-    ]
-  ],
   themeConfig: {
+    image: 'favicon.ico',
     announcementBar: {
       id: 'star_us', // Any value that will identify this message.
       content:
@@ -29,6 +17,9 @@ module.exports = {
       backgroundColor: '#79afaafc', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
+    },
+    colorMode: {
+      defaultMode: 'dark',
     },
     navbar: {
       title: '',
@@ -81,14 +72,6 @@ module.exports = {
               label: 'Cafe Advanced',
               to: '/docs/advanced/',
             },
-            // {
-            //   label: 'Functional Programming',
-            //   to: 'docs/functional-programming/',
-            // },
-            // {
-            //   label: 'Modular Programming',
-            //   to: 'docs/modular-programming/',
-            // },
           ],
         },
         {
@@ -126,7 +109,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cafe Inc.`,
+      copyright: `<br /> Created with ❤️ in India | Copyright © ${new Date().getFullYear()} <a target="_blank" rel="noopener noreferrer" href="mailto:admin@cafe-lang.tech">Cafe Authors</a>.`,
     },
   },
   presets: [

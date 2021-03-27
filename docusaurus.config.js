@@ -9,7 +9,7 @@ module.exports = {
   organizationName: 'cafe-jvm-lang', // Usually your GitHub org/user name.
   projectName: 'cafe-docs', // Usually your repo name.
   themeConfig: {
-    image: 'favicon.ico',
+    image: 'favicon-32x32.png',
     announcementBar: {
       id: 'star_us', // Any value that will identify this message.
       content:

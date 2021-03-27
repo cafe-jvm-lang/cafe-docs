@@ -5,16 +5,16 @@ sidebar_label: Cafe Fundamentals
 slug: /fundamentals
 ---
 
-
+This section covers fundamental concept of [Structured Programming](https://en.wikipedia.org/wiki/Structured_program_theorem) for any algorithm, that is `Iteration, selection & Sub-sequence`  with the syntax to implement in cafe.
 
 ## Comments
 
 Cafe supports single line comment using ``#`` Symbol and multi line comments using ``/*..*/``
 
 ```
-# this is single line comment.
+# this is a single line comment.
 /*
-    this is Multi-line comment.
+    this is a Multi-line comment.
 */
 ```
 

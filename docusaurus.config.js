@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Cafe',
-  tagline: 'Effectively, first prototype based programming language on JVM.',
+  tagline: 'Effectively, First Prototype Based Programming Language on JVM.',
   url: 'https://www.cafe-lang.tech',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -13,7 +13,7 @@ module.exports = {
     announcementBar: {
       id: 'star_us', // Any value that will identify this message.
       content:
-          'If you like Cafe, please give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/cafe-jvm-lang/cafe">Github</a> 🎉!',
+          'If you like Cafe, please give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/cafe-jvm-lang/cafe">GitHub</a> 🎉!',
       backgroundColor: '#79afaafc', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -82,7 +82,7 @@ module.exports = {
               href: 'https://gitter.im/cafe-jvm-lang/cafe-lang',
             },
             {
-              label: "Want to share feedback on docs? ",
+              label: "Want to share feedback on website? ",
               href: 'https://gitter.im/cafe-jvm-lang/cafe-doc'
             },
           ],
@@ -98,11 +98,14 @@ module.exports = {
               label: 'Gitter',
               href: 'https://gitter.im/cafe-jvm-lang/cafe-lang',
             },
-
+            {
+              label: 'Talk to Admin',
+              href: 'mailto:admin@cafe-lang.tech'
+            }
           ],
         },
       ],
-      copyright: `<br /> Created with ❤️ in India | Copyright © ${new Date().getFullYear()} <a target="_blank" rel="noopener noreferrer" href="mailto:admin@cafe-lang.tech">Cafe Authors</a>.`,
+      copyright: `<br /> Developed with ❤️ in India | Copyright © ${new Date().getFullYear()} Cafe, Inc.`,
     },
   },
   presets: [

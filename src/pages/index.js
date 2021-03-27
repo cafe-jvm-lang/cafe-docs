@@ -10,8 +10,8 @@ function Home() {
                 <meta property="og:url" content="https://www.cafe-lang.tech/"/>
                 <meta property="og:title" content="Cafe -- Programming Language"/>
                 <meta property="og:description"
-                      content="Cafe, a dynamic ,prototype-based, programming language for JVM"/>
-                <meta name="keywords" content="Cafe, JVM, programming-language, prototype-based"/>
+                      content="Cafe, a dynamic ,prototype-based, programming language on JVM"/>
+                <meta name="keywords" content="Cafe, JVM, programming-language, prototype-based, jvm-language"/>
                 <title>Cafe</title>
 
                 {/*  https://realfavicongenerator.net/  */}

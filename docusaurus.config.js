@@ -25,8 +25,8 @@ module.exports = {
       title: '',
       logo: {
         alt: 'Cafe',
-        src: 'static/img/black_logo.svg',
-        srcDark: 'static/img/white_logo.svg',
+        src: '/img/black_logo.svg',
+        srcDark: '/img/white_logo.svg',
       },
       items: [
         {

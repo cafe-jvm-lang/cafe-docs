@@ -85,10 +85,6 @@ module.exports = {
               label: "Want to share feedback on docs? ",
               href: 'https://gitter.im/cafe-jvm-lang/cafe-doc'
             },
-            {
-              label: 'Contributor Guide',
-              href: 'https://github.com/cafe-jvm-lang/cafe/blob/master/README.md',
-            },
           ],
         },
         {
@@ -99,13 +95,10 @@ module.exports = {
               href: 'https://github.com/cafe-jvm-lang/cafe',
             },
             {
-              label: 'Twitter',
-              href: 'https://github.com/cafe-jvm-lang/cafe-docs',
+              label: 'Gitter',
+              href: 'https://gitter.im/cafe-jvm-lang/cafe-lang',
             },
-            {
-              label: 'Blog',
-              to: '#',
-            },
+
           ],
         },
       ],

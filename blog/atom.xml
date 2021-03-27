@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://cafe-jvm-lang.github.io/blog</id>
+    <id>https://www.cafe-lang.tech/blog</id>
     <title>Cafe Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://cafe-jvm-lang.github.io/blog"/>
+    <link rel="alternate" href="https://www.cafe-lang.tech/blog"/>
     <subtitle>Cafe Blog</subtitle>
-    <icon>https://cafe-jvm-lang.github.io/img/favicon.svg</icon>
+    <icon>https://www.cafe-lang.tech/img/favicon.svg</icon>
 </feed>

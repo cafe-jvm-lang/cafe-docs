@@ -8,13 +8,25 @@ const FeaturesScroll = forwardRef((props,ref) => {
             title: 'Simple & easy to use',
             desc: 'Cafe is dynamically typed and has simple syntax',
             code: `var i= 10;
-cmd.println(i);`
+cmd.println(i);
+
+
+
+
+
+`
         },
         {
             title: 'Class Free',
             desc: 'Cafe has only one construct: Object!',
             code: `var obj = {};
-cmd.print(obj);`
+cmd.print(obj);
+
+
+
+
+
+`
         },
         {
             title: 'Behavior Delegation',
@@ -22,7 +34,11 @@ cmd.print(obj);`
             code: `var parent= {age:45};
 var child = Object.delegate(parent);
 child.age = 18;
-cmd.println(child.age);`
+cmd.println(child.age);
+
+
+
+`
         },
         {
             title: 'Modular',
@@ -43,7 +59,9 @@ export func a(){
 }
 a(func() {
 cmd.print("Hey, there!");
-});`
+});
+
+`
         },
         {
             title: 'Flexible DS',
@@ -53,7 +71,9 @@ list[0:1] = [20];
 var sub = list[1:2];
 list.add();
 list.remove();
-cmd.print(sub);`
+cmd.print(sub);
+
+`
         }
     ]
 

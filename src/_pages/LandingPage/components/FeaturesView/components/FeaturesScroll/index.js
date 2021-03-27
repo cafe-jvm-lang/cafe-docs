@@ -27,21 +27,22 @@ cmd.println(child.age);`
         {
             title: 'Modular',
             desc: 'Cafe supports Modular Programming',
-            code: `import a from ‘./café_file’;
+            code: `import a from "./cafe_file";
 a();
+
 #cafe_file.cafe
 export func a(){
-cmd.println(“I’m in café_file”);
+    cmd.println("I’m in cafe_file");
 }`
         },
         {
             title: 'Functional',
             desc: 'Supports HoF, Closure & Anonymous function',
-            code: `Func a(b){
-b();
+            code: `func a(b){
+    b();
 }
 a(func() {
-cmd.print(“Hey, there!”);
+cmd.print("Hey, there!");
 });`
         },
         {

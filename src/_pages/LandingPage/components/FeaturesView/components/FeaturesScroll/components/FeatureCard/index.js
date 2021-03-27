@@ -4,23 +4,19 @@ import Spacer from "../../../../../utils/Spacer";
 import CodeBlock from '@theme/CodeBlock';
 
 function FeatureCard(props){
-    const code = `# A cafe object
-var rect = { 
-            width: 10, 
-            height: 11 
-        }
-`;
+    const content = props.content;
+
     return (
         <div className={styles.Container}>
             <div className={styles.FeatureHeader}>
-                <div className={styles.FeatureTitle}>#class-free</div>
-                <Spacer height={20} />
-                <div className={styles.FeatureDescription}>Cafe has only one construct: Object</div>
+                <div className={styles.FeatureTitle}>{content.title}</div>
+                <Spacer height={20}/>
+                <div className={styles.FeatureDescription}>{content.desc}</div>
             </div>
-            <Spacer height={20} />
+            <Spacer height={20}/>
             <div className={styles.CodeExample}>
                 <CodeBlock className={'javasccript'}>
-                    {code}
+                    {content.code}
                 </CodeBlock>
             </div>
         </div>

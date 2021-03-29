@@ -184,9 +184,6 @@ html[data-theme=dark] .navbar .navbar__link[href*=github]:before {
 }
 
 @media (max-width: 996px) {
-  .navbar__items--right {
-    display: none;
-  }
 
   .navbar__toggle {
     display: inherit;

@@ -21,6 +21,10 @@ module.exports = {
     colorMode: {
       defaultMode: 'dark',
     },
+    algolia: {
+      apiKey: 'fe4db14215eb5761fe2eb059c7a7928c',
+      indexName: 'cafe-lang',
+    },
     navbar: {
       title: '',
       logo: {

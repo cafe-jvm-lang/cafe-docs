@@ -1,5 +1,7 @@
 # Cafe Documentation Site
 
+[![Join the chat at https://gitter.im/cafe-jvm-lang/cafe-docs](https://badges.gitter.im/cafe-jvm-lang/cafe-docs.svg)](https://gitter.im/cafe-jvm-lang/cafe-docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 ## Installation

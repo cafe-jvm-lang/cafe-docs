@@ -2,7 +2,7 @@ module.exports = {
   title: 'Cafe',
   tagline: 'Effectively, First Prototype Based Programming Language on JVM.',
   url: 'https://www.cafe-lang.tech',
-  baseUrl: '/',
+  baseUrl: '/cafe-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.svg',

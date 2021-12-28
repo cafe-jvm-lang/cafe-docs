@@ -4,8 +4,8 @@
   <ShortName>Cafe</ShortName>
   <Description>Search Cafe</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://www.cafe-lang.tech/img/favicon.svg</Image>
-  <Url type="text/html" method="get" template="https://www.cafe-lang.tech/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://www.cafe-lang.tech/opensearch.xml" />
-  <moz:SearchForm>https://www.cafe-lang.tech/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://www.cafe-lang.tech/cafe-docs/img/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://www.cafe-lang.tech/cafe-docs/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://www.cafe-lang.tech/cafe-docs/opensearch.xml" />
+  <moz:SearchForm>https://www.cafe-lang.tech/cafe-docs/</moz:SearchForm>
 </OpenSearchDescription>
